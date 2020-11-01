@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="XE - Currency Converter">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.XE.listeners.CustomListeners" />
+	</listeners>
+
+<test name="XE Currency Conversion-ie">
+<parameter name="browser" value="ie"/>
+		<classes>
+			<class name="com.XE.testsuites.CurrencyConverter" />
+		</classes>
+</test> 
+</suite> <!-- Suite -->	
